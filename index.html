@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>AllezCiné</title>
+</head>
+<body class="container-fluid px-md-0">
+
+    <header class="row">
+
+      <div id="wrap1" class="row">
+
+        <div id="carouselExampleIndicators" class="col-md carousel slide mh-100" data-ride="carousel">
+
+          <div class="row mx-md-0">
+            <nav id="menu" class="col-md navbar navbar-expand-lg navbar-dark mr-md-auto">
+              <a class="navbar-brand" id="logo" href="#">
+                  <div class="allez">Allez</div>
+                  <div class="cine">Cine!</div>
+              </a>
+              <button class="navbar-toggler btn-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a id="home" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Genre
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Comedy</a>
+                      <a class="dropdown-item" href="#">Western</a>
+                      <a class="dropdown-item" href="#">Fiction</a>
+                      <a class="dropdown-item" href="#">Policier</a>
+                      <a class="dropdown-item" href="#">Thriller</a>
+                      <div class="dropdown-divider"></div>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sortie
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">2016</a>
+                        <a class="dropdown-item" href="#">2015</a>
+                        <a class="dropdown-item" href="#">2014</a>
+                        <a class="dropdown-item" href="#">2013</a>
+                        <div class="dropdown-divider"></div>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link disabled" href="#">disabled</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link disabled" href="#">disabled</a>
+                  </li>
+                </ul>
+                <a href="#" id="contact" class="btn active mr-md-auto ml-sm-0" role="button" aria-pressed="true">Contact</a>
+                <form id="search-bar" class="form-inline my-2 my-lg-0">
+                  <input id="search-input" class="form-control" type="search" placeholder="Search" aria-label="Search">
+                  <button id="search-button" class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+                    <img src="assets/img/search.svg" alt="search icon">
+                  </button>
+                </form>
+              </div>
+            </nav>
+          </div>
+
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="assets/img/film1_test.jpg" alt="First slide">
+                <div class="overlay">
+                  <img src="assets/img/black.jpg" alt="overlay">
+                </div>
+                <div class="carousel-caption d-md-block d-none align-self-center">
+                  <a href="#" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Watch trailer</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/img/film1_test.jpg" alt="Second slide">
+                <div class="overlay">
+                  <img src="assets/img/black.jpg" alt="overlay">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <a href="#" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Watch trailer</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/img/film1_test.jpg" alt="Third slide">
+                <div class="overlay">
+                  <img src="assets/img/black.jpg" alt="overlay">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <a href="#" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Watch trailer</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="assets/img/film1_test.jpg" alt="Third slide">
+              <div class="overlay">
+                <img src="assets/img/black.jpg" alt="overlay">
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <a href="#" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Watch trailer</a>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <div id="title2" class="row offset-md-3">
+            <h2 class="col-md-12 col-sm-12">Latest <strong>on</strong>line <strong>mo</strong>vies </h2>
+            <p class="col-md-12 my-sm-5">In space no one can hear you scream</p>
+          </div>
+        </div>
+      </div>
+    
+      <div id="wrap2" class="row w-100">
+        <nav id="loginbar" class="navbar navbar-light col-md-12">
+          <form class="row col-md-12">
+            <a class="nav-link col-md-2 col-12" href="#">+32 0000 00 00 00</a>
+            <button id="login" class="btn btn-dark col-md-1 col-12" type="button" data-toggle="modal" data-target="#loginModal">Login</button>
+            <button id="register" class="btn btn-dark col-md-1 ml-md-1 col-12" type="button" data-toggle="modal" data-target="#registerModal">Register</button>
+          </form>
+        </nav>
+      </div> 
+        <!-- image de l'API + trailers de l'API-->
+        <!---------------------------modal login formulaire---------------------------------------->
+        
+      <div class="modal vw-sm-100 fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----------------------------register modal------------------------------------------------------>
+      <div class="modal vw-sm-100 fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="registerModalLabel">Register</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState">Country</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose...</option>
+                      <option value="Belgium">Belgium</option>
+                      <option value="France">France</option>
+                    </select>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign up</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </header>
+    <!----------------------------------------------Fin header----------------------------------------------------->
+    <!----------------------------------------------Middle--------------------------------------------------------->
+    <aside class="row">
+      <div class="card" style="width: 18rem;">
+        <img src="/assets/img/film1_test.jpg" class="card-img-top" alt="image film">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </aside>
+    <!--nav réseaux sociaux-->
+    <!--aside avec 5 cartes (1 + boucle)-->
+    <!--3 sections-->
+    <!--section 1 = Features movies = title + nav catégories + 2 rangées de 6 cartes (boucle) + boutons + ou - de films-->
+    <!--section 2 = shop movies = title + 2 rangées 4 cartes + modèles + boutons précédent et suivant -->
+    <!--section 3 = Contact us = title + formulaire-->
+    <footer class="row">
+      <section id="subscribe" class="row col-md-12">
+        <h2 class="col-md-12">Subscribe to us</h2>
+        <form class="form-inline offset-md-4">
+          <div class="form-group">
+            <input type="email" class="form-control input-group w-sm-100" id="subscribeInput" placeholder="name@example.com">
+          </div>
+        
+          <button id="buttonSubscribe" type="submit" class="btn py-md-1">Subscribe</button>
+        </form>
+      </section>
+        <!--messagerie ?-->
+      <div class="row col-12 px-0 ml-md-0 Titres">
+        <!--bordure inférieure de diff color-->
+        <div class="col-12 px-0 col-md-2">Release</div>
+        <div class="col-12 px-0 col-md-2">Movies</div>
+        <div class="col-12 px-0 col-md-2">Review Movies</div>
+        <div class="col-12 px-0 col-md-2">Latest Movies</div>
+        <div class="col-12 px-0 col-md-2">
+          <div class="allez">Allez</div>
+          <div class="cine">Cine!</div>
+        </div>
+      </div>
+
+      <div class="row col-12">
+        <div class="col-2 col-sm-12">
+          <ul>
+            <li>
+              <a href="#">2016</a>
+            </li>
+            <li>
+              <a href="#">2015</a>
+            </li>
+            <li>
+              <a href="#">2014</a>
+            </li>
+            <li>
+              <a href="#">2013</a>
+            </li>
+            <li>
+              <a href="#">2012</a>
+            </li>
+            <li>
+              <a href="#">2011</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2 col-sm-12">
+          <ul>
+            <li>
+              <a href="#">Adventure</a>
+            </li>
+            <li>
+              <a href="#">Comedy</a>
+            </li>
+            <li>
+              <a href="#">Fantasy</a>
+            </li>
+            <li>
+              <a href="#">Action</a>
+            </li>
+            <li>
+              <a href="#">Thriller</a>
+            </li>
+            <li>
+              <a href="#">Horror</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2 col-sm-12">
+          <button type="button" class="btn btn-dark btn-sm">Comedy</button>
+          <button type="button" class="btn btn-dark btn-sm">Horror</button>
+          <button type="button" class="btn btn-dark btn-sm">Historical</button>
+          <button type="button" class="btn btn-dark btn-sm">Romantic</button>
+          <button type="button" class="btn btn-dark btn-sm">Love</button>
+          <button type="button" class="btn btn-dark btn-sm">Action</button>
+          <button type="button" class="btn btn-dark btn-sm">Reviews</button>
+        </div>
+        <div class="col-2 col-sm-12">
+          <div class="row film">
+            <img src="#" alt="film" class="col">
+            <h5 class="col filmTitre">titre du film</h5>
+          </div>
+          <div class="row film">
+            <img src="#" alt="film" class="col">
+            <h5 class="col filmTitre">titre du film</h5>
+          </div>
+          <div class="row film">
+            <img src="#" alt="film" class="col">
+            <h5 class="col filmTitre">titre du film</h5>
+          </div>
+          <div class="row film">
+            <img src="#" alt="#" class="col">
+            <h5 class="col filmTitre">titre du film</h5>
+          </div>
+          <div class="row film">
+            <img src="#" alt="film" class="col">
+            <h5 class="col filmTitre">titre du film</h5>
+          </div>
+          <div class="row film">
+            <img src="#" alt="film" class="col">
+            <h5 class="col filmTitre">titre du film</h5>
+          </div>
+        </div>
+        <div class="col-2 col-sm-12">
+          <img src="#" alt="images">
+        </div>
+      </div>
+        <!--2 listes Release + movies (categories) + liste boutons / tags (categories)+ liste latest films (cartes horiz ?) + title + i composée-->
+      <div class="row">
+        <!--faire une nav avec des boutons qui contiennent des liens vers les réseaux sociaux contenant des icones-->
+      </div>
+        <!--nav barre réseaux sociaux 2 + bouton remonter-->
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script> 
+</body>
+</html>

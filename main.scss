@@ -1,0 +1,237 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("assets/font/Roboto-Regular.ttf") format("ttf");
+}
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("assets/font/Roboto-Bold.ttf") format("ttf");
+}
+
+@media (min-width: 768px) {
+    #subscribeInput {
+        width: 31.25rem;
+    }
+}
+//-----------------body------------------------------------------------------------------------------
+body {
+    font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;
+}
+
+//-------------------header--------------------------------------------------------------------------
+header {
+    height: 20%;
+    padding-left: 15px;
+}
+#wrap1 {
+    padding-right: 0;
+    width: 100%;
+}
+
+//-----------------navbar----------------------------------------------------------------------------
+#menu { 
+    //pour superposer la nav au carousel je lui mets le z-index le plus haut, position absolute, top = 0
+    background-color:rgba(0, 0 , 0, 0.0); //bg-transparent
+    z-index: 9;
+    top: 0;
+    position: absolute;
+    
+}
+
+#logo {
+    font-family: "Roboto-Bold", Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-transform: uppercase;
+    display: inline;
+    .allez {
+        color:#FF4140;
+        display: inline;
+        margin-right: 0;
+    }
+    .cine {
+        color: white;
+        display: inline;
+        margin-left: -8px; //pour coller les 2 mots
+    }
+    
+}
+.nav-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 3px;
+}
+#home {
+    color: #FF4140;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: rgba(0, 0 , 0, 0.3);
+    
+}
+#home:hover {
+    background-color: rgba(0, 0 , 0, 0.3);
+    border: 1px solid rgba(0, 0 , 0, 0.3);
+}
+#navbarDropdown {
+    background-color: #FF4140;
+    text-decoration: none;
+    color: inherit;
+    color: white;
+}
+#navbarDropdown:hover {
+    text-decoration: none !important;
+    border: 1px solid white;
+}
+.disabled {
+    background-color: rgba(0, 0 , 0, 0.3);
+}
+.disabled:hover {
+    background-color: rgba(0, 0 , 0, 0.3);
+    border: 1px solid rgba(0, 0 , 0, 0.3);
+}
+
+#contact {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 5em;
+    background-color: rgba(0, 0 , 0, 0.3);
+}
+#contact:hover {
+    border: 1px solid rgba(0, 0 , 0, 0.3);
+}
+
+#search-bar {
+    border-radius: 30px;
+    
+    
+    #search-input {
+        background-color: black;
+        border-radius: 30px 0px 0px 30px;
+        border: 2px solid black;
+    }
+    #search-button {
+        border-radius: 0px 30px 30px 0px;
+        width: 40px;
+        height: 40px;
+        background-color:rgba(0, 0 , 0, 0.0);
+        margin-left: 0;
+        border-color: black;
+    }
+}
+
+
+//----------------Carousel-------------------------------------------------------------------------------------
+.carousel-indicators li {
+    margin-right: 10px;
+    margin-bottom: 25%;
+    height: 5px;
+}
+
+.carousel-indicators .active {
+    //l'indicateur actif du carousel est rouge
+    background-color: #FF4140;
+}
+
+#carouselExampleIndicators { 
+    //pour superposer navbar et carousel top = 0 (idem nav)
+    width: 100%;
+    top: 0;
+    padding: 0;
+}
+
+.overlay { 
+    //pour mettre un fond noir transparent au dessus du carousel (img noir dans une div qui est ds div img carousel)
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    filter:alpha(opacity=60);
+    -moz-opacity:0.6;
+    -khtml-opacity: 0.6;
+    opacity: 0.6;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+#title2 {
+    top: 18rem;
+    position: absolute;
+    text-align: center;
+    color: white;
+    
+    h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+        strong {
+            color: #FF4140;
+            font-weight: bold;
+        }
+    }
+    p {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+}
+.carousel-caption {
+    bottom: 40%;
+    z-index: inherit;
+    
+    a {
+        background-color: #FF4140 !important;
+        border-color: white !important;
+        text-transform: uppercase;
+    }
+    a:hover {
+        border-color: #FF4140 !important;
+    }
+}
+
+//----------------Loginbar----------------------------------------------------------------------------
+#loginbar{
+    background-color: #FF4140;
+    
+    button {
+        background-color: #0D0D0D;
+        text-transform: uppercase;
+    }
+    
+}
+
+
+//-----------------Middle-----------------------------------------------------------------------------
+
+//-----------------Footer-------------------------------------------------------------------------------
+footer {
+    padding-left: 15px;
+    background-color: #0D0D0D;
+    color: white;
+    bottom: 0;  
+}
+
+#subscribe {
+    text-align: center;
+    h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #FF4140;
+    }
+    #subscribeInput {
+        margin-right: 1rem;
+        border-radius: 0;
+        border-color: #0D0D0D;
+    }
+    #buttonSubscribe {
+        border-radius: 0;
+        background-color: #FF4140;
+        color: white;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: large;
+    }
+}
