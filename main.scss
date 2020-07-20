@@ -116,9 +116,12 @@ header {
         border-radius: 0px 30px 30px 0px;
         width: 40px;
         height: 40px;
-        background-color:rgba(0, 0 , 0, 0.0);
+        background-color:black;
         margin-left: 0;
         border-color: black;
+        svg {
+            fill: rgba(255, 255, 255, 0.5);
+        }
     }
 }
 
@@ -233,5 +236,87 @@ footer {
         text-transform: uppercase;
         font-weight: normal;
         font-size: large;
+    }
+}
+
+.titres {
+    div {
+        color: #4C5155;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: small;
+        
+        .allez {
+            color: #FF4140;
+            font-size: x-large;
+            font-weight: bold;
+            display: inline;
+        }
+        .cine {
+            color: white;
+            font-size: x-large;
+            font-weight: bold;
+            display: inline;
+            margin-left: -5px;
+        }
+    }    
+}
+
+.listes {
+    color: #4C5155;
+    ul {
+        padding-left: 0;
+        li {
+            list-style: none;
+        }
+         li a {
+             text-decoration: none;
+             color: #4C5155;
+         }
+    }
+}
+
+.contactUs {
+    text-align: center;
+    h3 {
+        text-transform: uppercase;
+    }
+    nav {
+        ul {
+            padding-left: 0;
+            
+            
+        }
+        ul li {
+            list-style: none;
+            display: inline;
+            margin-right: 0.5rem;            
+            
+        }
+        ul li a {
+            align-self: center;
+            svg {
+                fill: white;
+                width: 32px;
+                height: 32px;
+                align-self: center;
+                text-align: center;
+                border: 1px solid white;
+                padding: 5px;
+            }
+        }
+    }
+}
+.arrow {
+    a {
+        color: #0D0D0D;
+        svg {
+            fill: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            padding: 1px;
+            border: 3px solid #FF4140;
+        }
     }
 }

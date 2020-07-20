@@ -123,9 +123,13 @@ header {
   border-radius: 0px 30px 30px 0px;
   width: 40px;
   height: 40px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: black;
   margin-left: 0;
   border-color: black;
+}
+
+#search-bar #search-button svg {
+  fill: rgba(255, 255, 255, 0.5);
 }
 
 .carousel-indicators li {
@@ -238,5 +242,93 @@ footer {
   text-transform: uppercase;
   font-weight: normal;
   font-size: large;
+}
+
+.titres div {
+  color: #4C5155;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: small;
+}
+
+.titres div .allez {
+  color: #FF4140;
+  font-size: x-large;
+  font-weight: bold;
+  display: inline;
+}
+
+.titres div .cine {
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  display: inline;
+  margin-left: -5px;
+}
+
+.listes {
+  color: #4C5155;
+}
+
+.listes ul {
+  padding-left: 0;
+}
+
+.listes ul li {
+  list-style: none;
+}
+
+.listes ul li a {
+  text-decoration: none;
+  color: #4C5155;
+}
+
+.contactUs {
+  text-align: center;
+}
+
+.contactUs h3 {
+  text-transform: uppercase;
+}
+
+.contactUs nav ul {
+  padding-left: 0;
+}
+
+.contactUs nav ul li {
+  list-style: none;
+  display: inline;
+  margin-right: 0.5rem;
+}
+
+.contactUs nav ul li a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.contactUs nav ul li a svg {
+  fill: white;
+  width: 32px;
+  height: 32px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  border: 1px solid white;
+  padding: 5px;
+}
+
+.arrow a {
+  color: #0D0D0D;
+}
+
+.arrow a svg {
+  fill: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 1px;
+  border: 3px solid #FF4140;
 }
 /*# sourceMappingURL=main.css.map */

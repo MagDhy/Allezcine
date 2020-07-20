@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/09625c7900.js"></script>
     <link rel="stylesheet" href="assets/css/main.css">
     <title>AllezCiné</title>
 </head>
-<body class="container-fluid px-md-0">
+<body class="container-fluid px-0">
 
-    <header class="row">
+    <header class="row ml-0">
 
       <div id="wrap1" class="row">
 
@@ -67,7 +68,7 @@
                 <form id="search-bar" class="form-inline my-2 my-lg-0">
                   <input id="search-input" class="form-control" type="search" placeholder="Search" aria-label="Search">
                   <button id="search-button" class="btn btn-outline-dark my-2 my-sm-0" type="submit">
-                    <img src="assets/img/search.svg" alt="search icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
                   </button>
                 </form>
               </div>
@@ -227,13 +228,15 @@
     </header>
     <!----------------------------------------------Fin header----------------------------------------------------->
     <!----------------------------------------------Middle--------------------------------------------------------->
-    <aside class="row">
-      <div class="card" style="width: 18rem;">
-        <img src="/assets/img/film1_test.jpg" class="card-img-top" alt="image film">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+    <aside class="row ml-0">
+      <div class="card-deck">
+        <div class="card" style="width: 18rem;">
+          <img src="/assets/img/film1_test.jpg" class="card-img-top" alt="image film">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
         </div>
       </div>
     </aside>
@@ -243,9 +246,9 @@
     <!--section 1 = Features movies = title + nav catégories + 2 rangées de 6 cartes (boucle) + boutons + ou - de films-->
     <!--section 2 = shop movies = title + 2 rangées 4 cartes + modèles + boutons précédent et suivant -->
     <!--section 3 = Contact us = title + formulaire-->
-    <footer class="row">
-      <section id="subscribe" class="row col-md-12">
-        <h2 class="col-md-12">Subscribe to us</h2>
+    <footer class="row ml-0">
+      <section id="subscribe" class="row col-12 col-md-12">
+        <h2 class=" col-12 col-md-12">Subscribe to us</h2>
         <form class="form-inline offset-md-4">
           <div class="form-group">
             <input type="email" class="form-control input-group w-sm-100" id="subscribeInput" placeholder="name@example.com">
@@ -255,7 +258,7 @@
         </form>
       </section>
         <!--messagerie ?-->
-      <div class="row col-12 px-0 ml-md-0 Titres">
+      <div class="row col-12 px-2 ml-md-0 py-2 titres">
         <!--bordure inférieure de diff color-->
         <div class="col-12 px-0 col-md-2">Release</div>
         <div class="col-12 px-0 col-md-2">Movies</div>
@@ -267,8 +270,8 @@
         </div>
       </div>
 
-      <div class="row col-12">
-        <div class="col-2 col-sm-12">
+      <div class="row col-12 px-2 ml-md-0 listes">
+        <div class="col-12 col-md-2">
           <ul>
             <li>
               <a href="#">2016</a>
@@ -290,7 +293,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-2 col-sm-12">
+        <div class="col-12 col-md-2">
           <ul>
             <li>
               <a href="#">Adventure</a>
@@ -312,7 +315,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-2 col-sm-12">
+        <div class="col-12 col-md-2">
           <button type="button" class="btn btn-dark btn-sm">Comedy</button>
           <button type="button" class="btn btn-dark btn-sm">Horror</button>
           <button type="button" class="btn btn-dark btn-sm">Historical</button>
@@ -321,7 +324,7 @@
           <button type="button" class="btn btn-dark btn-sm">Action</button>
           <button type="button" class="btn btn-dark btn-sm">Reviews</button>
         </div>
-        <div class="col-2 col-sm-12">
+        <div class="col-12 col-md-2">
           <div class="row film">
             <img src="#" alt="film" class="col">
             <h5 class="col filmTitre">titre du film</h5>
@@ -347,14 +350,49 @@
             <h5 class="col filmTitre">titre du film</h5>
           </div>
         </div>
-        <div class="col-2 col-sm-12">
+        <div class="col-12 col-md-2">
           <img src="#" alt="images">
         </div>
       </div>
         <!--2 listes Release + movies (categories) + liste boutons / tags (categories)+ liste latest films (cartes horiz ?) + title + i composée-->
-      <div class="row">
-        <!--faire une nav avec des boutons qui contiennent des liens vers les réseaux sociaux contenant des icones-->
+      <div class="row px-0 contactUs">
+        <h3 class="col-12 col-md-8 offset-md-3 pl-0">Contact US</h3>
+        <nav class="col-10 px-1 offset-md-3 col-md-8">
+          <ul>
+            <li>
+              <a href="https://fr-fr.facebook.com/">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/explore">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://fr.linkedin.com/">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/?gl=CH">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://plus.google.com/">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"/></svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="col-1 col-md-1 align-self-md-end  px-0 arrow">
+          <a class="btn btn-sm" href="#wrap1" role="button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg>
+          </a>
+        </div>
       </div>
+      
         <!--nav barre réseaux sociaux 2 + bouton remonter-->
     </footer>
 
