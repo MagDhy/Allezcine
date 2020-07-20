@@ -11,6 +11,14 @@
     #subscribeInput {
         width: 31.25rem;
     }
+
+    .contactUs {
+        margin-left: 32rem;
+    }
+    .arrow {
+        margin-left: 18rem;
+    }
+
 }
 //-----------------body------------------------------------------------------------------------------
 body {
@@ -208,7 +216,61 @@ header {
 
 
 //-----------------Middle-----------------------------------------------------------------------------
+//-----------------Aside------------------------------------------------------------------------------
+aside {
+    .card-deck {
+        box-shadow: 0 0 4px #4C5155;
+    }
+}
+//----------------Reseau sociaux verticaux-----------------------------------------------------------
+.vertic-reseau {
+    margin-left: 0;
+    ul {
+        margin-left: 0;
+        padding-left: 0;
+        li {
+            list-style: none;
+            margin-left: 0;
+        }
+    }
 
+    a {
+        border-radius: 0px 30px 30px 0px;
+    }
+    
+    
+    .bleu-fonce {
+        background-color: #3E5D94;
+        
+    }
+    svg {
+        fill: black;
+        width: 24px;
+        height: 24px;
+        padding: 3px;
+        background-color: white;
+        border-radius: 50px;
+    }
+}
+
+//-----------------Features Movies-----------------------------------------------------------------------
+#featuresMovies {
+    h2 {
+        text-transform: uppercase;
+        border-left: 2px solid #FF4140;
+    }
+}
+
+.categories {
+    ul {
+        padding-left: 0;
+    }
+    button {
+        background-color: #FF4140;
+        color: white;
+        text-transform: uppercase;
+    }
+}
 //-----------------Footer-------------------------------------------------------------------------------
 footer {
     padding-left: 15px;
@@ -240,11 +302,13 @@ footer {
 }
 
 .titres {
+    border-bottom: 1px solid #4C5155;
     div {
         color: #4C5155;
         text-transform: uppercase;
         font-weight: bold;
         font-size: small;
+        
         
         .allez {
             color: #FF4140;
@@ -264,6 +328,7 @@ footer {
 
 .listes {
     color: #4C5155;
+    border-bottom: 1px solid #4C5155;
     ul {
         padding-left: 0;
         li {
@@ -278,6 +343,7 @@ footer {
 
 .contactUs {
     text-align: center;
+    
     h3 {
         text-transform: uppercase;
     }
