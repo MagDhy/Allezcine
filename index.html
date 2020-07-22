@@ -33,7 +33,7 @@
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Genre
+                      Categories
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="#">Action</a>
@@ -47,7 +47,7 @@
                   </li>
                   <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Sortie
+                        Release
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">2016</a>
@@ -128,8 +128,8 @@
             <span class="sr-only">Next</span>
           </a>
           <div id="title2" class="row offset-md-3">
-            <h2 class="col-md-12 col-sm-12">Latest <strong>on</strong>line <strong>mo</strong>vies </h2>
-            <p class="col-md-12 my-sm-5">In space no one can hear you scream</p>
+            <h2 class="col-md-12 col-12">Latest <strong>on</strong>line <strong>mo</strong>vies </h2>
+            <p class="col-md-12 col-12 my-sm-5">In space no one can hear you scream</p>
           </div>
         </div>
       </div>
@@ -227,6 +227,7 @@
 
     </header>
     <!----------------------------------------------Fin header----------------------------------------------------->
+    
     <!----------------------------------------------Middle--------------------------------------------------------->
     <!-----------------------------------------------Aside--------------------------------------------------------->
     <aside class="row ml-0 my-3">
@@ -242,7 +243,7 @@
       </div>
     </aside>
     <!-----------------------------------------------nav réseaux sociaux---------------------------------->
-    <div class="row vertic-reseau">
+    <div class="row ml-0 vertic-reseau">
       <nav>
         <ul>
           <li>
@@ -270,8 +271,8 @@
     </div>
     <!--3 sections-->
     <!-------------------------------------------------Features Movies----------------------------------->
-    <section class="row" id="#featuresMovies">
-      <h2 class="col-12">Features Movies</h2>
+    <section class="row ml-0" id="featuredMovies">
+      <h2 class="col-12 ml-2 my-2 my-md-5">Featured Movies</h2>
       <nav class="col-12 categories">
         <ul class="nav">
           <li class="nav-item">
@@ -297,53 +298,94 @@
           </li>
         </ul>
       </nav>
-      <div class="row col-12">
-        <div class="card-deck">
-          <div class="card" style="width: 18rem;">
-            <img src="/assets/img/film1_test.jpg" class="card-img-top" alt="image film">
-            <div class="card-body row">
-              <h5 class="card-title col-12">Card title</h5>
-              <p class="card-text col-6">Date</p>
+      <div class="row ml-0 my-3">
+        <div class="col-12">
+          <div class="card-deck">
+            <div class="card" style="width: 18rem;">
+              <img src="/assets/img/film1_test.jpg" class="card-img-top" alt="image film">
+              <div class="card-body row">
+                <h5 class="card-title col-12">Card title</h5>
+                <p class="card-text col-6">Date</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card-deck">
-          <div class="card" style="width: 18rem;">
-            <img src="/assets/img/film1_test.jpg" class="card-img-top" alt="image film">
-            <div class="card-body row">
-              <h5 class="card-title col-12">Card title</h5>
-              <p class="card-text col-6">Date</p>
+          <div class="card-deck">
+            <div class="card" style="width: 18rem;">
+              <img src="/assets/img/film1_test.jpg" class="card-img-top" alt="image film">
+              <div class="card-body row">
+                <h5 class="card-title col-12">Card title</h5>
+                <p class="card-text col-6">Date</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card-deck d-none">
-          <div class="card" style="width: 18rem;">
-            <img src="/assets/img/film1_test.jpg" class="card-img-top" alt="image film">
-            <div class="card-body row">
-              <h5 class="card-title col-12">Card title</h5>
-              <p class="card-text col-6">Date</p>
+          <div class="card-deck d-none">
+            <div class="card" style="width: 18rem;">
+              <img src="/assets/img/film1_test.jpg" class="card-img-top" alt="image film">
+              <div class="card-body row">
+                <h5 class="card-title col-12">Card title</h5>
+                <p class="card-text col-6">Date</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card-deck d-none">
-          <div class="card" style="width: 18rem;">
-            <img src="/assets/img/film1_test.jpg" class="card-img-top" alt="image film">
-            <div class="card-body row">
-              <h5 class="card-title col-12">Card title</h5>
-              <p class="card-text col-6">Date</p>
+          <div class="card-deck d-none">
+            <div class="card" style="width: 18rem;">
+              <img src="/assets/img/film1_test.jpg" class="card-img-top" alt="image film">
+              <div class="card-body row">
+                <h5 class="card-title col-12">Card title</h5>
+                <p class="card-text col-6">Date</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <button type="button" class="btn btn-primary btn-sm">Plus de films</button>
-          <button type="button" class="btn btn-primary btn-sm">Moins de films</button>
+          <div class="plusmoins">
+            <button type="button" class="btn btn-sm mx-1 plus">Plus de films</button>
+            <button type="button" class="btn btn-sm mx-1 d-none moins">Moins de films</button>
+          </div>
         </div>
       </div>
     </section>
     <!--section 1 = Features movies = title + nav catégories + 2 rangées de 6 cartes (boucle) + boutons + ou - de films-->
+    <section class="row ml-0 my-3" id="shopMovies">
+      <h2 class="col-12 ml-2 my-2 my-md-5">Shop Movies</h2>
+      <div class="row">
+        <div class="col-12">
+          <div class="card-deck">
+            <div class="card" style="width: 18rem;">
+              <img src="/assets/img/film1_test.jpg" class="card-img-top" alt="image film">
+              <div class="card-body row">
+                <h5 class="card-title col-12">Card title</h5>
+                <p class="card-text col-6">Date</p>
+                <p class="card-text col-6">Price</p>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="previousnext">
+            <button id="previous">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
+            </button>
+            <button id="next">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>
+            </button>
+          </div>
+          <div class="card" id="details">
+            <div class="card-body">
+              <iframe class="col-12" id="trailerShopMovie" width="720" height="480" src="https://www.youtube.com/embed/BQMHRQvRmGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--section 2 = shop movies = title + 2 rangées 4 cartes + modèles + boutons précédent et suivant -->
     <!--section 3 = Contact us = title + formulaire-->
-    <footer class="row ml-0">
+
+    <!----------------------------------------Footer------------------------------------------------------>
+    <footer class="row ml-0 mt-3">
       <section id="subscribe" class="row col-12 col-md-12 py-2">
         <h2 class=" col-12 col-md-12">Subscribe to us</h2>
         <form class="form-inline offset-md-4">
@@ -413,13 +455,13 @@
           </ul>
         </div>
         <div class="col-12 col-md-2">
-          <button type="button" class="btn btn-dark btn-sm">Comedy</button>
-          <button type="button" class="btn btn-dark btn-sm">Horror</button>
-          <button type="button" class="btn btn-dark btn-sm">Historical</button>
-          <button type="button" class="btn btn-dark btn-sm">Romantic</button>
-          <button type="button" class="btn btn-dark btn-sm">Love</button>
-          <button type="button" class="btn btn-dark btn-sm">Action</button>
-          <button type="button" class="btn btn-dark btn-sm">Reviews</button>
+          <button type="button" class="btn btn-dark btn-sm my-1">Comedy</button>
+          <button type="button" class="btn btn-dark btn-sm my-1">Horror</button>
+          <button type="button" class="btn btn-dark btn-sm my-1">Historical</button>
+          <button type="button" class="btn btn-dark btn-sm my-1">Romantic</button>
+          <button type="button" class="btn btn-dark btn-sm my-1">Love</button>
+          <button type="button" class="btn btn-dark btn-sm my-1">Action</button>
+          <button type="button" class="btn btn-dark btn-sm my-1">Reviews</button>
         </div>
         <div class="col-12 col-md-2">
           <div class="row film">
@@ -452,9 +494,9 @@
         </div>
       </div>
         <!--2 listes Release + movies (categories) + liste boutons / tags (categories)+ liste latest films (cartes horiz ?) + title + i composée-->
-      <div class="row px-0 justify-content-md-between contactUs">
+      <div class="row px-0 pt-2 justify-content-md-between connectUs">
         <div class="row col-10 col-md-7">
-          <h3 class="col-12 col-md-12">Contact US</h3>
+          <h3 class="col-12 col-md-12">Connect US</h3>
           <nav class="col-12 col-md-12">
             <ul>
               <li>

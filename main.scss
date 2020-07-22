@@ -12,7 +12,7 @@
         width: 31.25rem;
     }
 
-    .contactUs {
+    .connectUs {
         margin-left: 32rem;
     }
     .arrow {
@@ -254,10 +254,12 @@ aside {
 }
 
 //-----------------Features Movies-----------------------------------------------------------------------
-#featuresMovies {
+#featuredMovies {
     h2 {
         text-transform: uppercase;
-        border-left: 2px solid #FF4140;
+        border-left: 5px solid #FF4140;
+        font-weight: bold;
+        padding-left: 0.5rem;
     }
 }
 
@@ -270,6 +272,39 @@ aside {
         color: white;
         text-transform: uppercase;
     }
+}
+
+.plusmoins button{
+    background-color: #FF4140;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 3rem;
+}
+
+//-----------------Shop Movies--------------------------------------------------------------------------
+
+#shopMovies {
+    h2 {
+        text-transform: uppercase;
+        border-left: 5px solid #FF4140;
+        font-weight: bold;
+        padding-left: 0.5rem;
+    }
+}
+.previousnext {
+    button {
+        background-color: #0D0D0D;
+        border: 1px solid #0D0D0D;
+        svg {
+            fill: #FF4140;
+            width: 0.5rem;
+        }
+    }
+}
+.details {
+    background-color: #0D0D0D;
+    color: white;
 }
 //-----------------Footer-------------------------------------------------------------------------------
 footer {
@@ -341,7 +376,7 @@ footer {
     }
 }
 
-.contactUs {
+.connectUs {
     text-align: center;
     
     h3 {

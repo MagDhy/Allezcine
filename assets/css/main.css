@@ -12,7 +12,7 @@
   #subscribeInput {
     width: 31.25rem;
   }
-  .contactUs {
+  .connectUs {
     margin-left: 32rem;
   }
   .arrow {
@@ -254,9 +254,11 @@ aside .card-deck {
   border-radius: 50px;
 }
 
-#featuresMovies h2 {
+#featuredMovies h2 {
   text-transform: uppercase;
-  border-left: 2px solid #FF4140;
+  border-left: 5px solid #FF4140;
+  font-weight: bold;
+  padding-left: 0.5rem;
 }
 
 .categories ul {
@@ -267,6 +269,36 @@ aside .card-deck {
   background-color: #FF4140;
   color: white;
   text-transform: uppercase;
+}
+
+.plusmoins button {
+  background-color: #FF4140;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 3rem;
+}
+
+#shopMovies h2 {
+  text-transform: uppercase;
+  border-left: 5px solid #FF4140;
+  font-weight: bold;
+  padding-left: 0.5rem;
+}
+
+.previousnext button {
+  background-color: #0D0D0D;
+  border: 1px solid #0D0D0D;
+}
+
+.previousnext button svg {
+  fill: #FF4140;
+  width: 0.5rem;
+}
+
+.details {
+  background-color: #0D0D0D;
+  color: white;
 }
 
 footer {
@@ -345,31 +377,31 @@ footer {
   color: #4C5155;
 }
 
-.contactUs {
+.connectUs {
   text-align: center;
 }
 
-.contactUs h3 {
+.connectUs h3 {
   text-transform: uppercase;
 }
 
-.contactUs nav ul {
+.connectUs nav ul {
   padding-left: 0;
 }
 
-.contactUs nav ul li {
+.connectUs nav ul li {
   list-style: none;
   display: inline;
   margin-right: 0.5rem;
 }
 
-.contactUs nav ul li a {
+.connectUs nav ul li a {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-.contactUs nav ul li a svg {
+.connectUs nav ul li a svg {
   fill: white;
   width: 32px;
   height: 32px;
