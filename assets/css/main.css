@@ -301,6 +301,39 @@ aside .card-deck {
   color: white;
 }
 
+#contactUs h2 {
+  text-transform: uppercase;
+  border-left: 5px solid #FF4140;
+  font-weight: bold;
+  padding-left: 0.5rem;
+}
+
+#contactUs .btn {
+  border-radius: 0;
+  background-color: #FF4140;
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: large;
+  margin-left: 0.5rem;
+}
+
+.modal h5 {
+  text-transform: uppercase;
+  border-left: 5px solid #FF4140;
+  font-weight: bold;
+  padding-left: 0.5rem;
+}
+
+.modal .btn {
+  border-radius: 0;
+  background-color: #FF4140;
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: large;
+}
+
 footer {
   padding-left: 15px;
   background-color: #0D0D0D;
